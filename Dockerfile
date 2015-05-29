@@ -5,7 +5,7 @@ RUN go get github.com/constabulary/gb/...
 RUN touch /change
 
 ADD notify /notify
-RUN apt-get install -y inotify-tools psmisc ssh && \
+RUN apt-get install -y inotify-tools psmisc ssh sudo && \
     wget https://raw.github.com/gregory90/go-reload/master/go-reload && \
     chmod +x go-reload && \
     chmod +x /notify && \
