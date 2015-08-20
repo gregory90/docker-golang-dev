@@ -1,6 +1,5 @@
-FROM gregory90/golang:1.4
+FROM gregory90/golang:1.5
 
-RUN go get github.com/tools/godep
 RUN go get github.com/constabulary/gb/...
 RUN touch /change
 
