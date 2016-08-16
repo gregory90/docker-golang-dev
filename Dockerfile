@@ -1,4 +1,4 @@
-FROM gregory90/golang:1.6.2
+FROM gregory90/golang:1.7
 
 RUN go get github.com/constabulary/gb/...
 RUN go get github.com/fschl/CompileDaemon
