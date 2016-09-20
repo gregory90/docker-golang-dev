@@ -1,10 +1,6 @@
-FROM gregory90/golang:1.7
+FROM gregory90/golang:1.7.1
 
-RUN go get github.com/constabulary/gb/...
 RUN go get github.com/fschl/CompileDaemon
 
 ENV GOPATH /app
-RUN apt-get install -y inotify-tools psmisc && \
-    wget https://raw.github.com/gregory90/go-reload/master/go-reload && \
-    chmod +x go-reload && \
-    mv go-reload /usr/local/bin/
+RUN apt-get install -y inotify-tools psmisc
