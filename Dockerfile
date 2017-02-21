@@ -1,4 +1,4 @@
-FROM gregory90/golang:1.7.1
+FROM gregory90/golang:1.8
 
 RUN go get github.com/fschl/CompileDaemon
 RUN go get github.com/derekparker/delve/cmd/dlv
