@@ -1,4 +1,4 @@
-FROM gregory90/golang:1.13.8
+FROM gregory90/golang:1.14
 
 RUN go get github.com/githubnemo/CompileDaemon
 
